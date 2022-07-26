@@ -9,37 +9,7 @@
   <title>Golang A05 Team</title>
 </head>
 
-<script>
-  function loadAnggota() {
-    fetch('./assets/anggota.json')
-      .then(response => response.json())
-      .then(data => {
-        const json = JSON.stringify(data);
-        const json_parse = JSON.parse(json)
-        const default_img = "./assets/img/default.png"
-        const default_deskripsi = "Lorem ipsum dolor sit amet."
-
-        json_parse.forEach((json_parse) => {
-          document.getElementById('cards').innerHTML += `
-          <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="${json_parse.image != "" ? json_parse.image : default_img}"></div>
-          <div class="card_content">
-            <h2 class="card_title">${json_parse.nama}</h2>
-            <p class="card_text">${json_parse.deskripsi != "" ? json_parse.deskripsi : default_deskripsi}</p>
-            <a class="btn card_btn" href="${json_parse.github}"><i class="fa-brands fa-github"></i><br>Github</a>
-          </div>
-        </div>
-      </li>`;
-        })
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  }
-</script>
-
-<body onload="loadAnggota()">
+<body>
   <div class=" topnav">
     <a class="active" href="#">Beranda</a>
   </div>
@@ -47,6 +17,56 @@
   <div class="main">
     <h1>Golang A05 Team</h1>
     <ul class="cards" id="cards">
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://media-exp1.licdn.com/dms/image/C5603AQF2p9mFiyrkyw/profile-displayphoto-shrink_800_800/0/1636431043317?e=1664409600&v=beta&t=Nr2yvPNW-s9BewWKFW4n1zPJl2ZcWjNRlpC1uPFplSY"></div>
+          <div class="card_content">
+            <h2 class="card_title">Mohammad Ghifari Yusuf</h2>
+            <p class="card_text">Laki-laki, 25 tahun, asal Bogor</p>
+            <a class="btn card_btn" href=""><i class="fa-brands fa-github"></i><br>Github</a>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="./assets/img/default.png"></div>
+          <div class="card_content">
+            <h2 class="card_title">Kelvin Tri</h2>
+            <p class="card_text">Lorem ipsum dolor sit amet</p>
+            <a class="btn card_btn" href=""><i class="fa-brands fa-github"></i><br>Github</a>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="./assets/img/default.png"></div>
+          <div class="card_content">
+            <h2 class="card_title">Mahendra Wijaya</h2>
+            <p class="card_text">Lorem ipsum dolor sit amet</p>
+            <a class="btn card_btn" href=""><i class="fa-brands fa-github"></i><br>Github</a>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="./assets/img/default.png"></div>
+          <div class="card_content">
+            <h2 class="card_title">Marcellinus Hari Prasetyo</h2>
+            <p class="card_text">Lorem ipsum dolor sit amet</p>
+            <a class="btn card_btn" href=""><i class="fa-brands fa-github"></i><br>Github</a>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="./assets/img/default.png"></div>
+          <div class="card_content">
+            <h2 class="card_title">Lukas Ono Harsongko</h2>
+            <p class="card_text">Lorem ipsum dolor sit amet</p>
+            <a class="btn card_btn" href=""><i class="fa-brands fa-github"></i><br>Github</a>
+          </div>
+        </div>
+      </li>
   </div>
 </body>
 <html>
