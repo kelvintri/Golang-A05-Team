@@ -10,64 +10,88 @@
 </head>
 
 <body>
-  <div class=" topnav">
-    <a class="active" href="#">Beranda</a>
-  </div>
+  <header>
+    <a class="header-logo" href="#">Golang A05 Team</a>
+    <nav class="navbar">
+      <ul class="navbar-link">
+        <li onclick="toggleNavbar()"><a href="#what-do-we-learn">What do We Learn</a></li>
+        <li onclick="toggleNavbar()"><a href="#our-team">Our Team</a></li>
+      </ul>
+    </nav>
+    <div class="navbar-menu-icon">
+      <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+    </div>
+  </header>
 
-  <div class="main">
-    <h1>Golang A05 Team</h1>
-    <ul class="cards" id="cards">
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="https://media-exp1.licdn.com/dms/image/C5603AQF2p9mFiyrkyw/profile-displayphoto-shrink_800_800/0/1636431043317?e=1664409600&v=beta&t=Nr2yvPNW-s9BewWKFW4n1zPJl2ZcWjNRlpC1uPFplSY"></div>
-          <div class="card_content">
-            <h2 class="card_title">Mohammad Ghifari Yusuf</h2>
-            <p class="card_text">Laki-laki, 25 tahun, asal Bogor</p>
-            <a class="btn card_btn" href=""><i class="fa-brands fa-github"></i><br>Github</a>
+  <main>
+    <section class="hero">
+      <div class="hero-main">
+        <img class="hero-main-image" src="https://miro.medium.com/max/1400/1*iEKJxwTIECUccHm_lqdBKA.png" alt="">
+        <h1 class="hero-main-text">Welcome to Our Team Website</h1>
+      </div>
+      <div class="hero-secondary">
+        <a class="hero-secondary-button" href="#what-do-we-learn">Scroll down to see more  <i class="fa-solid fa-angles-down"></i></a>
+      </div>
+    </section>
+    <section id="what-do-we-learn">
+      <h1>What do We Learn</h1>
+    </section>
+    <section id="our-team" class="team">
+      <h1>Golang A05 Team</h1>
+      <ul class="cards" id="cards">
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://media-exp1.licdn.com/dms/image/C5603AQF2p9mFiyrkyw/profile-displayphoto-shrink_800_800/0/1636431043317?e=1664409600&v=beta&t=Nr2yvPNW-s9BewWKFW4n1zPJl2ZcWjNRlpC1uPFplSY"></div>
+            <div class="card_content">
+              <h2 class="card_title">Mohammad Ghifari Yusuf</h2>
+              <p class="card_text">Laki-laki, 25 tahun, asal Bogor</p>
+              <a class="btn card_btn" href=""><i class="fa-brands fa-github"></i><br>Github</a>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="./assets/img/default.png"></div>
-          <div class="card_content">
-            <h2 class="card_title">Kelvin Tri</h2>
-            <p class="card_text">Lorem ipsum dolor sit amet</p>
-            <a class="btn card_btn" href="https://github.com/kelvintri"><i class="fa-brands fa-github"></i><br>Github</a>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="Assets/img/default.png"></div>
+            <div class="card_content">
+              <h2 class="card_title">Kelvin Tri</h2>
+              <p class="card_text">Lorem ipsum dolor sit amet</p>
+              <a class="btn card_btn" href="https://github.com/kelvintri"><i class="fa-brands fa-github"></i><br>Github</a>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="./assets/img/default.png"></div>
-          <div class="card_content">
-            <h2 class="card_title">Mahendra Wijaya</h2>
-            <p class="card_text">Lorem ipsum dolor sit amet</p>
-            <a class="btn card_btn" href=""><i class="fa-brands fa-github"></i><br>Github</a>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="Assets/img/default.png"></div>
+            <div class="card_content">
+              <h2 class="card_title">Mahendra Wijaya</h2>
+              <p class="card_text">Lorem ipsum dolor sit amet</p>
+              <a class="btn card_btn" href=""><i class="fa-brands fa-github"></i><br>Github</a>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="./assets/img/default.png"></div>
-          <div class="card_content">
-            <h2 class="card_title">Marcellinus Hari Prasetyo</h2>
-            <p class="card_text">Lorem ipsum dolor sit amet</p>
-            <a class="btn card_btn" href=""><i class="fa-brands fa-github"></i><br>Github</a>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="Assets/img/default.png"></div>
+            <div class="card_content">
+              <h2 class="card_title">Marcellinus Hari Prasetyo</h2>
+              <p class="card_text">Hello world...</p>
+              <a class="btn card_btn" href="https://github.com/feelingblue19"><i class="fa-brands fa-github"></i><br>Github</a>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="./assets/img/default.png"></div>
-          <div class="card_content">
-            <h2 class="card_title">Lukas Ono Harsongko</h2>
-            <p class="card_text">Lorem ipsum dolor sit amet</p>
-            <a class="btn card_btn" href="https://github.com/LukasOnoHarsongko"><i class="fa-brands fa-github"></i><br>Github</a>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="Assets/img/default.png"></div>
+            <div class="card_content">
+              <h2 class="card_title">Lukas Ono Harsongko</h2>
+              <p class="card_text">Lorem ipsum dolor sit amet</p>
+              <a class="btn card_btn" href="https://github.com/LukasOnoHarsongko"><i class="fa-brands fa-github"></i><br>Github</a>
+            </div>
           </div>
-        </div>
-      </li>
-  </div>
+        </li>
+      </ul>
+    </section>
+  </main>
 
    <!-- Footer -->
    <div class="footer">
@@ -82,5 +106,28 @@
     </div>
   </div>
   <!-- Footer -->
+
+  <script>
+    let navbarIconOpen = false;
+
+    document.querySelector('.navbar-menu-icon').addEventListener('click', toggleNavbar);
+
+    function toggleNavbar() {
+      document.querySelector('.navbar-link').classList.toggle('is-show');
+      document.querySelector('.navbar-menu-icon').classList.toggle('is-open');
+      document.querySelector('body').classList.toggle('freeze');
+
+      navbarIconOpen = !navbarIconOpen;
+
+      if (navbarIconOpen) {
+        document.querySelector('#menu-icon').classList.remove('fa-bars');
+        document.querySelector('#menu-icon').classList.add('fa-x');
+      } else {
+        document.querySelector('#menu-icon').classList.remove('fa-x');
+        document.querySelector('#menu-icon').classList.add('fa-bars');
+      }
+    }
+
+  </script>
 </body>
 <html>
