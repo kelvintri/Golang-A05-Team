@@ -301,12 +301,20 @@ img {
     overflow: hidden;
   }
 
+  main {
+    padding: 10px 20px;
+  }
+
   header {
     padding: 5px;
   }
 
   .header-logo {
     font-size: 20px;
+  }
+
+  .hero {
+    padding-top: 50px;
   }
 
   .navbar-link {
@@ -354,12 +362,7 @@ img {
     height: 300px;
   }
 
-  .hero-secondary-button {
-    padding: 20px;
-    line-break: normal;
-    border: none;
-    /* background-color: #090979;
-    border-radius: 30px;
-    color: #fff; */
+  .cards_item {
+    width: 100%;
   }
 }
