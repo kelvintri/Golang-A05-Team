@@ -23,69 +23,110 @@
     </div>
   </header>
 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">⬆</button>
+
   <main>
-    <section class="hero">
+    <section id="main" class="hero">
       <div class="hero-main">
         <img class="hero-main-image" src="https://miro.medium.com/max/1400/1*iEKJxwTIECUccHm_lqdBKA.png" alt="">
         <h1 class="hero-main-text">Welcome to Our Team Website</h1>
       </div>
       <div class="hero-secondary">
-        <a class="hero-secondary-button" href="#what-do-we-learn">Scroll down to see more  <i class="fa-solid fa-angles-down"></i></a>
+        <a class="hero-secondary-button" href="#what-do-we-learn">See more <i class="fa-solid fa-angles-down"></i></a>
       </div>
     </section>
-    <section id="what-do-we-learn">
+    <section id="what-do-we-learn" class="hero">
       <h1>What do We Learn</h1>
-    </section>
-    <section id="our-team" class="team">
-      <h1>Golang A05 Team</h1>
       <ul class="cards" id="cards">
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="https://media-exp1.licdn.com/dms/image/C5603AQF2p9mFiyrkyw/profile-displayphoto-shrink_800_800/0/1636431043317?e=1664409600&v=beta&t=Nr2yvPNW-s9BewWKFW4n1zPJl2ZcWjNRlpC1uPFplSY"></div>
+            <div class="card_image">
+              <img src="https://ddb6ltykpq547.cloudfront.net/language/58/icon_for_web/704dc4b49e5945304fc88b3abf3b3ca1">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">HTML & CSS</h2>
+              <p class="card_text">Bahasa digunakan untuk membuat dan mendesain tampilan setiap situs web.</p>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="https://ddb6ltykpq547.cloudfront.net/language/72/icon_for_web/fc0030aeab202c3dc5fbd43435f771a3">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Go</h2>
+              <p class="card_text">Sebuah bahasa pemrograman yang diproduksi oleh Google.</p>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="https://ddb6ltykpq547.cloudfront.net/language/66/icon_for_web/53917e513492415214ceaf67a0c30bc5">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Git</h2>
+              <p class="card_text">Sebuah sistem kontrol versi paling populer yang para pengembang gunakan untuk melacak
+                dan membagikan code.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="hero-secondary">
+        <a class="hero-secondary-button" href="#our-team">Meet our team <i class="fa-solid fa-angles-down"></i></a>
+      </div>
+    </section>
+    <section id="our-team" class="team">
+      <h1>Our Team</h1>
+      <ul class="cards" id="cards">
+        <li class="cards_item">
+          <div class="card">
             <div class="card_content">
               <h2 class="card_title">Mohammad Ghifari Yusuf</h2>
               <p class="card_text">Laki-laki, 25 tahun, asal Bogor</p>
-              <a class="btn card_btn" href=""><i class="fa-brands fa-github"></i><br>Github</a>
+              <a class="btn card_btn" href="https://github.com/mghifariyusuf"><i
+                  class="fa-brands fa-github"></i><br>Github</a>
             </div>
           </div>
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="Assets/img/default.png"></div>
             <div class="card_content">
               <h2 class="card_title">Kelvin Tri</h2>
               <p class="card_text">Wubba Lubba Dub-Dub</p>
-              <a class="btn card_btn" href="https://github.com/kelvintri"><i class="fa-brands fa-github"></i><br>Github</a>
+              <a class="btn card_btn" href="https://github.com/kelvintri"><i
+                  class="fa-brands fa-github"></i><br>Github</a>
             </div>
           </div>
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="Assets/img/default.png"></div>
             <div class="card_content">
               <h2 class="card_title">Mahendra Wijaya</h2>
               <p class="card_text">01001100 01101111 01110010 01100101 01101101</p>
-              <a class="btn card_btn" href="https://github.com/mahendraw1710"><i class="fa-brands fa-github"></i><br>Github</a>
+              <a class="btn card_btn" href="https://github.com/mahendraw1710"><i
+                  class="fa-brands fa-github"></i><br>Github</a>
             </div>
           </div>
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="Assets/img/default.png"></div>
             <div class="card_content">
               <h2 class="card_title">Marcellinus Hari Prasetyo</h2>
               <p class="card_text">Hello world...</p>
-              <a class="btn card_btn" href="https://github.com/feelingblue19"><i class="fa-brands fa-github"></i><br>Github</a>
+              <a class="btn card_btn" href="https://github.com/feelingblue19"><i
+                  class="fa-brands fa-github"></i><br>Github</a>
             </div>
           </div>
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="Assets/img/default.png"></div>
             <div class="card_content">
               <h2 class="card_title">Lukas Ono Harsongko</h2>
               <p class="card_text">Lorem ipsum dolor sit amet</p>
-              <a class="btn card_btn" href="https://github.com/LukasOnoHarsongko"><i class="fa-brands fa-github"></i><br>Github</a>
+              <a class="btn card_btn" href="https://github.com/LukasOnoHarsongko"><i
+                  class="fa-brands fa-github"></i><br>Github</a>
             </div>
           </div>
         </li>
@@ -93,16 +134,17 @@
     </section>
   </main>
 
-   <!-- Footer -->
-   <div class="footer">
-    <div class="footer-logo"><img class="logo-progate" src="https://prog-8.com/assets/packs/dist/images/header_logo-ef0b79c05943d1702565..svg"></div>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-logo"><img class="logo-progate"
+        src="https://prog-8.com/assets/packs/dist/images/header_logo-ef0b79c05943d1702565..svg"></div>
     <div class="btn-wrapper">
       <a href="https://discord.gg/64kP6GSg" title="join discord">
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968898.png" alt="discord logo" class="logo-discord">
       </a>
     </div>
     <div class="footer-copy">
-    @2022 | Golang 3-4 | Golang A05 Team
+      Made with ❤️ by A05 team
     </div>
   </div>
   <!-- Footer -->
@@ -128,6 +170,22 @@
       }
     }
 
+    var mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   </script>
 </body>
 <html>
