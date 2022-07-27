@@ -292,7 +292,7 @@ img {
 .logo-progate {
   width: 20px;
   height: 30px;
-  margin-top: 10px;
+  line-height: 200%;
   margin-left: 10px;
 }
 
@@ -301,13 +301,13 @@ img {
   height: 30px;
   float: right;
   filter: invert(100%);
-  margin-top: 10px;
+  line-height: 200%;
   margin-right: 10px;
 }
 
 .footer-copy {
   text-align: center;
-  margin-top: 10px;
+  line-height: 200%;
 }
 
 /* Footer */
